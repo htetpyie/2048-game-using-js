@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let squareSize = gridSize * gridSize;
   let score = 0;
 
-  gridDisplay.style.width = `${gridSize * 100 + 20}px`
-  gridDisplay.style.height = `${gridSize * 100 + 20}px`
-  document.querySelector('.game-container').style.width = `${gridSize * 100 + 100}px`
+  gridDisplay.style.width = `${gridSize * 70 + 20}px`
+  gridDisplay.style.height = `${gridSize * 70 + 20}px`
+  document.querySelector('.game-container').style.width = `${gridSize * 70 + 100}px`
   document.querySelector('#targetScore').innerHTML = targetScore
 
   createBoard();
