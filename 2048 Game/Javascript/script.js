@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let squareSize = gridSize * gridSize;
   let score = 0;
 
-  // gridDisplay.style.width = gridSize * 100 + 20
-  // gridDisplay.style.height = gridSize * 100 + 20
+  gridDisplay.style.width = `${gridSize * 100 + 20}px`
+  gridDisplay.style.height = `${gridSize * 100 + 20}px`
 
   createBoard();
 
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sumRow();
     generateTwo();
     moveRight();
+    changeColor()
   }
 
   function moveRight() {
@@ -88,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sumRow();
     generateTwo();
     moveLeft();
+    changeColor()
   }
 
   function moveLeft() {
@@ -135,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sumColumn();
     moveUp();
     generateTwo();
+    changeColor()
   }
 
   function moveUp() {
@@ -164,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sumColumn();
     moveDown();
     generateTwo();
+    changeColor()
   }
 
   function moveDown() {
@@ -223,5 +227,46 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Game over!! Rfresh the page to play again.");
       document.removeEventListener("keyup", control);
     }
+  }
+
+  function changeColor(){
+    squares.forEach(element => {
+      if(element.innerHTML == 2 ){
+        element.style.background = '#FDF0E7'
+      }
+      else if(element.innerHTML == 4 ){
+        element.style.background = '#F0E6C9'
+      }
+      else if(element.innerHTML == 8){
+        element.style.background = '#EDB583'
+      }
+      else if(element.innerHTML == 16){
+        element.style.background = '#F4976D'
+      }
+      else if(element.innerHTML == 32){
+        element.style.background = '#F18262'
+      }
+      else if(element.innerHTML == 64){
+        element.style.background = '#E25434'
+      }
+      else if(element.innerHTML == 128){
+        element.style.background = '#EED077'
+      }
+      else if(element.innerHTML == 256){
+        element.style.background = '#EBD045'
+      }
+      else if(element.innerHTML == 512){
+        element.style.background = '#E5C236'
+      }
+      else if(element.innerHTML == 1024){
+        element.style.background = '#E3BC16'
+      }
+      else if(element.innerHTML >= 2048){
+        element.style.background = '#EFCB53'
+      }
+      else{
+        element.style.background = 'rgb(239,229,219)'
+      }
+    });
   }
 });

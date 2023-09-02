@@ -7,20 +7,22 @@ body{
     flex-wrap: wrap;
     height: 420px;
     width: 420px;
-    background-color: rgb(0, 0, 0);
+    background-color:  rgb(167, 154, 154);
     margin: auto;
     justify-content: center;
     align-content: center;
+    margin-bottom: 100px;
 }
 
 .grid div{
     border: solid rgb(68, 65, 65) 2px;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(167, 154, 154);
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    background-color:rgb(239,229,219);
     text-align: center;
     vertical-align: middle;
-    line-height: 100px;
+    line-height: 90px;
     font-weight: bold;
     font-size: 52px;
 }
