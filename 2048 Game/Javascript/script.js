@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     generateTwo();
     generateTwo();
+    changeColor();
   }
 
   function generateTwo() {
@@ -232,40 +233,53 @@ document.addEventListener("DOMContentLoaded", () => {
   function changeColor(){
     squares.forEach(element => {
       if(element.innerHTML == 2 ){
-        element.style.background = '#FDF0E7'
+        element.style.background = '#DCD5D3'
+        element.style.color = '#494846'
       }
       else if(element.innerHTML == 4 ){
-        element.style.background = '#F0E6C9'
+        element.style.background = '#E3DD8A'
+        element.style.color = '#5E4D3F'
       }
       else if(element.innerHTML == 8){
-        element.style.background = '#EDB583'
+        element.style.background = '#F2AC34'
+        element.style.color = '#D6D8D6'
       }
       else if(element.innerHTML == 16){
-        element.style.background = '#F4976D'
+        element.style.background = '#F99B19'
+        element.style.color = '#E7F8FF'
       }
       else if(element.innerHTML == 32){
-        element.style.background = '#F18262'
+        element.style.background = '#EE6915'
+        element.style.color = '#DCEEFD'
       }
       else if(element.innerHTML == 64){
-        element.style.background = '#E25434'
+        element.style.background = '#FB4D19'
+        element.style.color = '#F3E8D4'
       }
       else if(element.innerHTML == 128){
-        element.style.background = '#EED077'
+        element.style.background = '#F4D155'
+        element.style.color = '#EBEAEA'
       }
       else if(element.innerHTML == 256){
-        element.style.background = '#EBD045'
+        element.style.background = "#EBD045";
+        element.style.color = "#EBEAEA";
       }
       else if(element.innerHTML == 512){
         element.style.background = '#E5C236'
+        element.style.color = '#EBEAEA'
+
       }
       else if(element.innerHTML == 1024){
+        element.style.color = '#EBEAEA'
         element.style.background = '#E3BC16'
       }
       else if(element.innerHTML >= 2048){
+        element.style.color = '#EBEAEA'
         element.style.background = '#EFCB53'
       }
       else{
-        element.style.background = 'rgb(239,229,219)'
+        element.style.color = '#695948'
+        element.style.background = '#A5A5A5'
       }
     });
   }

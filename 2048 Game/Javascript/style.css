@@ -1,5 +1,46 @@
 body{
-    background-color: rgb(250, 242, 242);
+    background-color: #1E1E1E;
+    color: #020202;
+}
+
+.game-container{
+    background: #313336;
+    padding: 0px;
+    padding-bottom: 20px;
+    width: 600px;
+    margin: 50px auto;
+}
+
+.scoreContainer {
+    background: #464b47;
+    font-weight: bold;
+    text-align: center;
+    color:#d8d8d0;
+    padding: 10px 0;
+    margin: auto;
+}
+
+
+#score-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 65%;
+}
+
+#score{
+    font-size: 30px;
+}
+
+.header {
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#result{
+    text-align: center;
+    margin: auto;
 }
 
 .grid {
@@ -7,46 +48,21 @@ body{
     flex-wrap: wrap;
     height: 420px;
     width: 420px;
-    background-color:  rgb(167, 154, 154);
-    margin: auto;
+    background-color: #626262;
+    margin: 40px auto;
     justify-content: center;
     align-content: center;
-    margin-bottom: 100px;
 }
 
 .grid div{
-    border: solid rgb(68, 65, 65) 2px;
     width: 90px;
     height: 90px;
     margin: 5px;
-    background-color:rgb(239,229,219);
+    background-color:#A5A5A5;
     text-align: center;
     vertical-align: middle;
     line-height: 90px;
     font-weight: bold;
     font-size: 52px;
-}
-
-.scoreContainer {
-    margin-top: 60px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-}
-
-.header {
-    font-size: 60px;
-    margin-top: 50px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.instructions{
-    text-align: center;
-    margin: auto;
-}
-
-#result{
-    text-align: center;
-    margin: auto;
+    color: #534449;
 }
