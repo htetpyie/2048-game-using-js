@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gridDisplay.style.width = `${gridSize * 100 + 20}px`
   gridDisplay.style.height = `${gridSize * 100 + 20}px`
+  document.querySelector('.game-container').style.width = `${gridSize * 100 + 100}px`
+  document.querySelector('#targetScore').innerHTML = targetScore
 
   createBoard();
 
@@ -211,8 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function checkWin() {
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i].innerHTML == targetScore) {
-        alert("Congratulation!! Refresh the page to play again.");
+      if (squares[i].innerHTML >= targetScore) {
+        alert("CONGRATULATION!! Refresh the page to play again.");
         document.removeEventListener("keyup", control);
       }
     }
@@ -225,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (numZeros === 0) {
-      alert("Game over!! Rfresh the page to play again.");
+      alert("GAME OVER!! Refresh the page to play again.");
       document.removeEventListener("keyup", control);
     }
   }
@@ -278,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         element.style.background = '#EFCB53'
       }
       else{
-        element.style.color = '#695948'
+        element.style.color = '#A5A5A5'
         element.style.background = '#A5A5A5'
       }
     });

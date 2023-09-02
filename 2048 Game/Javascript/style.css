@@ -16,18 +16,22 @@ body{
     font-weight: bold;
     text-align: center;
     color:#d8d8d0;
-    padding: 10px 0;
+    padding: 5px 0;
     margin: auto;
 }
 
-
-#score-content {
+#score-contents{
     display: flex;
-    flex-direction: column;
-    margin-left: 65%;
+    justify-content: space-between;
+    margin: 0 50px;
 }
 
-#score{
+.score-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.score{
     font-size: 30px;
 }
 
